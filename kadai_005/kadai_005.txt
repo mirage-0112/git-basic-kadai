@@ -1,0 +1,27 @@
+PS C:\Users\aki74\Desktop\lesson> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\aki74\Desktop\lesson
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/01/16     22:27                git_challenge        
+
+PS C:\Users\aki74\Desktop\lesson\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git init 
+Initialized empty Git repository in C:/Users/aki74/Desktop/lesson/git_challenge/.git/
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git add .
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git commit -m " hello_world.txtを追加 "
+[main (root-commit) 5905af1]  hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+ 
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git add .
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git commit -m " 日本語
+訳を追記 "
+[main da7bb49]  日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\aki74\Desktop\lesson\git_challenge> git log --oneline
+da7bb49 (HEAD -> main)  日本語訳を追記
+5905af1  hello_world.txtを追加
